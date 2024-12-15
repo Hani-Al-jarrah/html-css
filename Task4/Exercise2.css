@@ -1,0 +1,18 @@
+h1 {
+    color: orange;
+  }
+  
+  h2 {
+    text-align: right;
+    font-weight: bold;
+  }
+  
+  p {
+    font-size: 16px;
+  }
+  
+  p:nth-child(4) {
+    font-family: 'Courier New', monospace;
+    text-align: right;
+  }
+  
