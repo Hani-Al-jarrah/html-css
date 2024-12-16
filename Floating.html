@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Float Example</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+        img {
+            float: left; /* Float image to the left */
+            margin-right: 10px; /* Add spacing between the image and text */
+            width: 150px;
+            height: auto;
+        }
+        .container {
+            margin: 20px;
+        }
+        .box {
+            float: left; /* Float boxes side-by-side */
+            width: 30%;
+            padding: 10px;
+            margin: 10px;
+            border: 1px solid #ccc;
+            background-color: #f0f8ff;
+            text-align: center;
+        }
+        .clearfix::after {
+            content: "";
+            display: table;
+            clear: both; /* Clear floating elements */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>CSS Float Example</h1>
+        <p>
+            <img src="https://via.placeholder.com/150" alt="Example Image">
+            This is an example of how text wraps around a floated image. The image floats to the left, and the text flows naturally around it. Floating is a very useful feature for layouts.
+        </p>
+        <div class="clearfix">
+            <div class="box">Box 1</div>
+            <div class="box">Box 2</div>
+            <div class="box">Box 3</div>
+        </div>
+        <p style="clear: both;">The `clearfix` ensures that all floated elements are cleared, preventing layout issues.</p>
+    </div>
+</body>
+</html>

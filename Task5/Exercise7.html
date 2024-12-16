@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Positioning</title>
+    <style>
+
+        .container {
+            display: flex;
+            border: 1px dotted black;
+            margin-bottom: 40px;
+            width: 500px;
+            gap: 10px;
+        }
+
+        .box {
+            width: 120px;
+            height: 120px;
+
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .box.red {
+            background-color: red;
+        }
+
+        .box.green {
+            background-color: green;
+        }
+
+        .static .box {
+            position: static;
+        }
+
+
+        .absolute-container {
+            position: relative; 
+            display: flex;
+            border: 1px dotted black;
+            width: 450px;
+            height: 120px;
+            
+
+        }
+
+        .relative .box.green {
+            position: relative;
+            top: 30px;
+            left: 30px;
+        }
+        .absolute .box {
+            position: absolute;
+            size: 1000px;
+            float: left;
+        }
+
+     
+        .absolute .box {
+            position: static;
+        }
+
+        .absolute .box.green {
+            position: absolute;
+            top: 450px;
+            left: 30px;
+        }
+
+        .absolute-container {
+            position: relative;
+            border: 1px dotted black;
+            margin-bottom: 20px;
+        
+        }
+    </style>
+</head>
+<body>
+    <h3>position: static</h3>
+    <div class="container static">
+        <div class="box red">One</div>
+        <div class="box green">Two</div>
+        <div class="box red">Three</div>
+        <div class="box red">Four</div>
+    </div>
+
+    <h3>position: relative</h3>
+    <div class="container relative">
+        <div class="box red">One</div>
+        <div class="box green">Two</div>
+        <div class="box red">Three</div>
+        <div class="box red">Four</div>
+    </div>
+
+    <h3>position: absolute</h3>
+    <div class="absolute container" style="width: 380px;">
+        <div class="box red">One</div>
+        <div class="box green">Two</div>
+        <div class="box red">Three</div>
+        <div class="box red">Four</div>
+    </div>
+</body>
+</html>

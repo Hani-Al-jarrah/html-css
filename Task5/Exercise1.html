@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exersice1</title>
+    <style>
+        .container {
+            display: flex;
+            gap: 20px; 
+            width: 300px;
+            height: 450px;
+        }
+
+        .card {
+            display: flex;
+            flex-direction: column; 
+            justify-content: space-between;
+            background: white;
+            border: 1px solid #ddd;
+        }
+
+        .card img {
+            width:200px;
+            height: 200px; 
+        }
+
+        .card-footer {
+            background: #333;
+            color: white;
+            padding: 10px;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 0.9rem;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <div class="card">
+            <div >
+                <h2>A short heading</h2>
+                <img src="blimp1.jpeg" alt="Hot Air Balloon">
+                <p>The idea of reaching the North Pole by means of balloons appears to have been entertained many years ago.</p>
+            </div>
+        </div>
+
+
+        <div class="card">
+            <div >
+                <h2>A short heading</h2>
+                <img src="blimp2.jpeg" alt="Sky Image">
+                <p>Short content.</p>
+            </div>
+            <div class="card-footer">I have a footer!</div>
+        </div>
+
+
+        <div class="card">
+            <div>
+                <h2>A longer heading in this card</h2>
+                <img src="blimp3.jpeg" alt="Hot Air Balloon">
+                <p>In a curious work, published in Paris in 1863 by Delaville Dedreux, there is a suggestion for reaching the North Pole by an aerostat.</p>
+            </div>
+            <div class="card-footer">I have a footer!</div>
+        </div>
+    </div>
+</body>
+</html>
