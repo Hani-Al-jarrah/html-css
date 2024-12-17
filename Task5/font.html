@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typography Example</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Lobster&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playwrite+DE+VA+Guides&display=swap" rel="stylesheet">
+
+    <!-- Custom Font Using @font-face -->
+    <style>
+        @font-face {
+            font-family: 'CustomFont';
+            src: url('path-to-your-font/CustomFont.woff2') format('woff2'),
+                 url('path-to-your-font/CustomFont.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        /* General Styles */
+        body {
+            margin: 0;
+            padding: 20px;
+            font-family: 'Roboto', sans-serif; /* Google Font as default */
+            line-height: 1.6;
+            background-color: #f7f7f7;
+            color: #333;
+        }
+
+        h1 {
+            font-family: 'Lobster', cursive; /* Google Font */
+            font-size: 3rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Text Shadow */
+            color: #2c3e50;
+        }
+
+        h2 {
+            font-family: 'CustomFont', sans-serif; /* Custom Font */
+            font-size: 2rem;
+            color: #8e44ad;
+            text-shadow: 1px 1px 3px rgba(142, 68, 173, 0.6);
+        }
+
+        .box {
+            width: 300px;
+            height: 150px;
+            margin: 20px 0;
+            padding: 20px;
+            background-color: #ecf0f1;
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); /* Box Shadow */
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        p {
+            font-size: 1rem;
+            font-weight: 400;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <h1>Google Fonts Example</h1>
+    <h2>Custom Font with @font-face</h2>
+
+    <div class="box">
+        <p>This box has a subtle shadow using the box-shadow property.</p>
+    </div>
+
+    <p>
+        This paragraph uses the default Google Font (Roboto). You can mix and match font weights and styles for different effects.
+    </p>
+</body>
+</html>
