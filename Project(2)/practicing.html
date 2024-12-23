@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hani's Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    /* General Body Styling */
+    body {
+      font-family: 'Roboto', sans-serif;
+      line-height: 1.6;
+    }
+
+    /* Navbar Styling */
+    nav {
+      position: sticky;
+      background-color: #ba5858;  
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      font-size: 1.2rem;
+      padding: 10px 15px;
+    }
+
+    .nav-links a:hover {
+      color: lightgray;
+      text-decoration: underline;
+      transition: color 0.3s ease;
+    }
+
+    /* About Section */
+    #about img {
+      max-width: 100%;
+      height: auto;
+      border: 5px solid #eee;
+      border-radius: 10px;
+    }
+
+    #about {
+      margin-top: 30px;
+      padding: 30px 0;
+      background-color: #f9f9f9;
+      border-radius: 10px;
+    }
+
+    #about h2 {
+      font-size: 2rem;
+      font-weight: bold;
+    }
+
+    #about p.position {
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: #555;
+      margin-top: -10px;
+    }
+
+    /* Projects Section */
+    #projects {
+      padding: 5% 0;
+    }
+
+    #projects h2 {
+      text-align: center;
+      font-weight: bold;
+      margin-bottom: 40px;
+    }
+
+    .card {
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Experience Section */
+
+.timeline {
+  position: relative;
+  margin: 30px 0;
+  padding-left: 20px;
+
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 30px;
+  padding-left: 20px;
+}
+
+.timeline-dot {
+  position: absolute;
+
+  left: -9px;
+  width: 18px;
+  height: 18px;
+  background-color: #333;
+  border-radius: 50%;
+  border: 3px solid white;
+}
+
+.timeline-content {
+  background: #f8f9fa;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.timeline-content h4,
+.timeline-content h5 {
+  margin: 0;
+}
+
+.timeline-content p {
+  margin: 5px 0 0;
+}
+
+    /* Contact Section */
+    #contact {
+      padding: 50px 0;
+      background-color: #f9f9f9;
+    }
+
+    #contact form input, #contact form textarea {
+      width: 100%;
+      margin-bottom: 15px;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+    }
+
+    #contact form button {
+      background-color: #333;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+    }
+
+    /* Footer Styles */
+footer {
+  background-color: #222; /* Dark background */
+  color: #fff; /* White text */
+  font-size: 0.9rem;
+}
+
+footer .footer-links li {
+  margin-bottom: 5px;
+}
+
+footer .footer-links a {
+  text-decoration: none;
+  color: #bbb; /* Light gray links */
+  transition: color 0.3s ease;
+}
+
+footer .footer-links a:hover {
+  color: #fff; /* White color on hover */
+}
+
+footer iframe {
+  border-radius: 8px; /* Rounded edges for iframe */
+  margin-top: 10px;
+}
+.text-white{
+  
+  font-size: 1.2rem;
+  text-decoration: underline;
+}
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+  <div class="container">
+    <a class="navbar-brand" href="#">Hani's Portfolio</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="#experience">experince</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+  <!-- About Me Section -->
+  <section id="about" class="container my-5">
+    <div class="row align-items-center">
+      <div class="col-md-4 text-center">
+        <img src="Hani's photo.jpg" alt="Hani Al-Jarrah" class="img-fluid rounded-circle">
+      </div>
+      <div class="col-md-8">
+        <h2>About Me</h2>
+        <p class="position">Full Stack Web Developer</p>
+        <p>
+          Hello! I’m Hani, a passionate web developer specializing in .NET and modern web technologies.
+          I enjoy building projects that make a difference and solve real-world problems.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section id="experience" class="container my-5">
+    <h2 class="text-center mb-4">Experience</h2>
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <h4>Web Development Intern</h4>
+          <h5>Orange Coding Academy</h5>
+          <p><small>March 2024 - Present</small></p>
+          <p>Developed modern web applications using .NET and JavaScript. Contributed to multiple projects while collaborating with a team of developers.</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <h4>Freelance Web Developer</h4>
+          <h5>Self-Employed</h5>
+          <p><small>Jan 2023 - Feb 2024</small></p>
+          <p>Designed and developed responsive websites for local businesses, focusing on clean design and user experience.</p>
+        </div>
+      </div>
+      <!-- Add more timeline items as needed -->
+    </div>
+  </section>
+  
+
+  <!-- Projects Section -->
+  <section id="projects" class="container">
+    <h2>My Projects</h2>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card">
+          <img src="RIAYAH.jpg" class="card-img-top" alt="Project 1">
+          <div class="card-body">
+            <h5 class="card-title">Riayah Medic</h5>
+            <p class="card-text">A healthcare management system aimed at simplifying patient care and medical operations.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="RIAYAH.jpg" class="card-img-top" alt="Project 2">
+          <div class="card-body">
+            <h5 class="card-title">Life game</h5>
+            <p class="card-text">java</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="container">
+    <h2>Contact Me</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+<!-- Footer Section -->
+<footer class="bg-dark py-4">
+  <div class="container">
+    <div class="row">
+      <!-- Links -->
+      <div class="col-md-8">
+
+        <ul class="footer-links list-unstyled">
+          <li><a href="#about" class="text-white">About</a></li>
+          <li><a href="#experience" class="text-white">Experience</a></li>
+          <li><a href="#projects" class="text-white">Projects</a></li>
+          <li><a href="#contact" class="text-white">Contact</a></li>
+        </ul>
+      </div>
+      <!-- Iframe -->
+      <div class="col-md-4">
+        <h5>Location</h5>
+        <iframe 
+       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3363.009728827796!2d35.849668799999996!3d32.5525856!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151c7715f2c2e7ab%3A0x51755840c8ddbefd!2sOrange%20Digital%20Village%20Irbid!5e0!3m2!1sen!2sjo!4v1734873960352!5m2!1sen!2sjo"
+          width="100%" 
+          height="150" 
+          style="border:0;" 
+          allowfullscreen="" 
+          loading="lazy">
+        </iframe>
+      </div>
+    </div>
+
+  </div>
+</footer>
+
+
+</body>
+</html>
